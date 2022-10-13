@@ -1,0 +1,27 @@
+{
+    "name": "Quarkus CLI",
+    "id": "quarkus",
+    "version": "0.9.0",
+    "documentationURL": "https://github.com/rasemmic/devcontainer-features/tree/main/src/quarkus",
+    "description": "Install quarkus cli (via SDKMAN) and vscode extensions",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "none",
+                "2"
+            ],
+            "default": "latest",
+            "description": "Select or enter version of Quarkus CLI"
+        }
+    },    
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "redhat.vscode-quarkus"
+            ]
+        }
+    }
+}
